@@ -1,0 +1,62 @@
+body.page--nomnomsox{
+  $nomnomsox: #fbbeb9;
+  h1{
+   color: $nomnomsox;
+  }
+  h2 {
+    color:#fd691e;
+  }
+  h3{
+    color:#282D48;
+  }
+  h4 {
+    color: #63D6A3;
+  }
+
+  .tools{
+    color: $nomnomsox;
+  }
+
+  blockquote {
+    color:#9e8e8d;
+  }
+
+  p.quote-src{
+    font-size:1.4rem;
+    text-align: right;
+    font-family: Times, serif;
+    color:#9e8e8d;
+  }
+
+  p.project-type{
+    font-size: 1.5rem;
+  }
+    
+
+  .showcase{
+    height: auto;
+    max-width: 1920px;
+    width: 100%;
+    display: block;
+    border-style: none;
+  }
+
+  .mission{
+    height: 65%;
+    width: inherit;
+    object-fit: contain;
+    display: block;
+    border-style: none;
+    margin-top: 1%;
+  }
+
+  .calendar{
+    margin: 0 auto;
+  }
+
+  .nomnompic{
+    width:60px;
+    height:auto;
+    margin-bottom:2.5%;
+  }
+}

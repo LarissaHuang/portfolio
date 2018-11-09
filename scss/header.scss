@@ -1,0 +1,86 @@
+header{
+    position:relative;
+    background: #5ae8e8; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5ae8e8 1%, #6473d6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5ae8e8 1%,#6473d6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5ae8e8 1%,#6473d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ae8e8', endColorstr='#6473d6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 1em;
+    .logo{
+        display: block;
+        float: left;
+        .logo-bounce {
+            margin-bottom: 60%;
+            height: 67px;
+            width: auto;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            @include mq($max, $small){
+                height: 50px;
+            }
+           
+          }
+        .logo-bounce:hover {
+            cursor: pointer;
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+        }
+     
+    }
+    .logo-wrapper{
+        position:absolute;
+        bottom:0;
+    }
+
+    .navbar {
+        background: inherit;
+        min-height: 50px;
+        float: right;
+        position: relative;
+        li{
+            margin-left: 0%;
+        }
+        a.nav-link{
+            text-align:center;
+        }
+       
+        .navbar-toggler{
+           position: absolute;
+           top: 0;
+           right: 0.8em;
+           outline: none;
+        }
+        .navbar-collapse{
+            margin-top: 3em;
+        }
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+ color: #fff;          
+}
+
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}

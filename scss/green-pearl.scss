@@ -1,0 +1,63 @@
+body.page--green-pearl{
+
+  .subhead {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  
+  h2 {
+    color:#1A8A4C;
+    margin-top: 1em;
+    margin-bottom:none;
+  }
+
+  h3{
+    font-weight: 600;
+    color:#1A8A4C;
+  }
+
+  h4 {
+    color: #63D6A3;
+  }
+
+  .hero-text{
+    color: #1A8A4C;
+  }
+
+  .tools{
+    color:#809aa5;
+  }
+  
+  .gp-inner {
+    position:relative;
+  }
+
+  .gp-inner img {
+    width:100%;
+    height:auto;
+  }
+
+
+  p.project-type{
+    font-size: 1.5rem;
+    color: green;
+  }
+
+  p.small{
+    font-size:0.8rem;
+    color:grey;
+  }
+ 
+  p.large{
+    font-size:1.2rem;
+  }
+
+  p.focus,
+  span.focus{
+    font-weight:800;
+    color: black;
+    font-size:1.05rem;
+  }
+
+}

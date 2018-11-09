@@ -1,0 +1,43 @@
+/* FOOTER STYLES */
+
+
+footer{
+    .container{
+        margin-bottom:0%;
+    }
+    background: #5ae8e8; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #5ae8e8 1%, #6473d6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #5ae8e8 1%,#6473d6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #5ae8e8 1%,#6473d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ae8e8', endColorstr='#6473d6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    a{
+        display:block;
+        font-size:0.9rem;
+        color: white;
+        line-height: 1.7rem;
+    }
+
+    h4 a{
+        font-size: 1.2rem;
+        display: block;
+        color:white;
+        line-height: 3rem;
+        text-decoration: underline;
+    }
+    h5{
+        color:#626196;
+    }
+}
+
+.row.footer{
+    width: 100%;
+    justify-content:center;
+    margin-top:3%;
+    
+}
+
+svg.svg-inline--fa.fa-heart{
+    font-size:0.75rem;
+    color:#f10d0de8;
+}
+

@@ -1,0 +1,230 @@
+@import "_mixins";
+body.page--tag-heuer{
+
+    h1,
+    h2 {
+        color:#1A8A4C;
+    }
+    
+    h5 {
+        font-size: 0.75rem;
+    }
+
+    .hero-text{
+        color: #444754;
+    }
+
+    .tools{
+        color:#a9119b;
+    }
+
+    .container--watch{
+        overflow: visible;
+    }
+
+    /* ===========
+    INTERACTIVE 
+    ===========*/
+    #watch{
+        position: relative;
+        width: 100%;
+        height: 615px;
+        @include mq($max, $medium){
+            height: 750px;
+        }
+        @include mq($max, $small){
+            height: 1200px;
+        }
+    }
+
+    
+    .row.buttons {
+        height: 56px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        top: 50%;
+        #prev{
+            position: absolute;
+            left: 0;
+        }
+        #next{
+            position: absolute;
+            right: 0;
+        }
+        @include mq($max, $small){
+            
+        }
+    }
+
+    .desc{
+        display:flex;
+        justify-content: center;
+        color:#262934;
+    }
+
+    p.button-desc{
+        font-size:1rem;
+    }
+
+    .button-desc{
+        justify-content:center;
+    }
+
+
+    .watch--wrist-band,
+    .watch--background,
+    .watch--speed-back,
+    .watch--tourbillon-back,
+    .watch--tourbillons,
+    .watch--gears,
+    .watch--screws,
+    .watch--hands,
+    .watch--brand-increments{
+        display: none;
+    }
+
+    .watch--wrist-band.active,
+    .watch--background.active,
+    .watch--speed-back.active,
+    .watch--tourbillon-back.active,
+    .watch--tourbillons.active,
+    .watch--gears.active,
+    .watch--screws.active,
+    .watch--hands.active,
+    .watch--brand-increments.active{
+        display: block;
+    }
+
+    button:focus {
+        outline:0;
+    }
+
+
+    #next,
+    #prev{
+        position: relative;
+        z-index: 10;
+        border: none;
+        background: #ac0f9c;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: inline-block;
+
+    }
+
+    #next:hover,
+    #prev:hover{
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+
+
+    .watch-layer{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include mq($max, $small){
+            height: 1200px;
+        }
+    }
+
+    .watch-layer img{
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        @include mq($max, $small){
+            max-width: 100%;
+        }
+    }
+
+    .watch-0,
+    .watch-1,
+    .watch-2,
+    .watch-3,
+    .watch-4,
+    .watch-5,
+    .watch-6,
+    .watch-7,
+    .watch-8,
+    .watch-9{
+        display: none;
+    }
+
+
+    .watch-0.active,
+    .watch-1.active,
+    .watch-2.active,
+    .watch-3.active,
+    .watch-4.active,
+    .watch-5.active,
+    .watch-6.active,
+    .watch-7.active,
+    .watch-8.active,
+    .watch-9.active{
+        display: block;
+    }
+
+    .watch-0.start{
+        display:block;
+    }
+
+    .watch--info{
+        background: white;
+        font-size: 1rem;
+        @include mq($max, $medium){
+            height: 650px;
+        }
+        @include mq($max, $small){
+           height: 450px;
+        }
+        h3{
+            padding: 0 5em 0 0;
+            @include mq($max, $small){
+                padding: inherit;
+            }
+        }
+        p {
+            background: white;
+            font-size: 1rem;
+            padding: 0 5em 0 0;
+            @include mq($max, $small){
+                padding: inherit;
+            }
+        }
+    }
+        
+   
+    p.layer-title{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        padding-top:1rem;
+    }
+
+    p.button-desc {
+        font-size: 0.8rem;;
+        line-height: 2rem;
+        margin-bottom: 3%;
+    }
+
+
+}
