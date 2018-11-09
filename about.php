@@ -39,6 +39,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4">
 				<img src="img/coding.png"/>
 				<h2 class="services">Web Development</h4>
+				<p>Hi, I'm Larissa and I smeel like cheeeeese.</p>
 				<p>With a skill set ranging from information architecture and content management to custom-coding sites that are attractive, mobile-compatible, and representative of your brand, I am experienced with the web development process.</p>
 			</div>
 
