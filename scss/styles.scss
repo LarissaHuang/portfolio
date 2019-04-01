@@ -498,27 +498,129 @@ svg.svg-inline--fa.fa-heart{
 
 
 /*Card Tilt Effect*/
-.c-test {
-  position: relative;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgrey;
+// .c-test {
+//   position: relative;
+//   width: auto;
+//   height: auto;
+//   margin: 0 auto;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: lightgrey;
+//   transform-style: preserve-3d;
+// }
+
+// img.c-test-inner {
+//   will-change: transform;
+//   transition: .15s;
+//   position: absolute;
+//   width: calc(100% - 63%);
+//   height: calc(100% - 50%);
+//   background-color: transparent;
+//   transform: translateZ(100px) scale(0.5);  
+// }
+
+/* Guusto */
+.c-example__tilt-guusto {
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-color: white;
+  background-image: url('../img/guusto-background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: perspective(300px);
+  transform: perspective(300px);
+}
+
+.c-example__tilt-inner-guusto {
+  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
+  transform: translateZ(50px) translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  width: 50px;
+  background-image: url('../img/guusto-inner.png');
+  height: 70px;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; 
+}
+
+.c-example__tilt-guusto{
+  transition: transform 1s;
 }
 
 
-img.c-test-inner {
-  will-change: transform;
-  transition: .15s;
+/* on hover show description  */
+#guusto-desc {
+  position:absolute;
+  bottom: 4%;
+  display: none;
+  padding: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#4673b7;
+}
+
+.c-example__tilt-guusto:hover #guusto-desc{
+  display: block;
+}
+
+/* React To Do List */
+.c-example__tilt-todo {
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-image: url('../img/todolist-background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(300px);
+  transform: perspective(300px);
+}
+
+.c-example__tilt-inner-todo {
+  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
+  transform: translateZ(50px) translateY(-50%) translateX(-50%);
   position: absolute;
-  width: calc(100% - 63%);
-  height: calc(100% - 50%);
-  background-color: transparent;
-  transform: translateZ(100px) scale(0.5);  
+  top: 42%;
+  left: 50%;
+  width: 50px;
+  background-image: url('../img/todolist-inner.png');
+  height: 70px;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; 
+}
+
+.c-example__tilt-todo{
+  transition: transform 1s;
+}
+
+
+/* on hover show description  */
+#todo-desc {
+  position:absolute;
+  bottom: 4%;
+  display: none;
+  padding: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#4673b7;
+}
+
+.c-example__tilt-todo:hover #todo-desc{
+  display: block;
 }
 
 
