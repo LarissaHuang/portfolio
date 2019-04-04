@@ -46,7 +46,7 @@
 
                 <div class="card">
 
-                    <div class="[ c-example__tilt-guusto ] js-tilt data-tilt-scale=" 1.1"" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                    <div class="[ c-example__tilt-guusto ] js-tilt data-tilt-scale=" 1.1" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
                         <div class="c-example__tilt-inner-guusto">
                         </div>
                         <span id="guusto-desc">
@@ -62,11 +62,11 @@
             <!-- React To Do List -->
             <div class="col-lg-4 col-md-6 nopadding">
                 <div class="card">
-                    <div class="[ c-example__tilt-todo] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                    <div class="[ c-example__tilt-todo]  js-tilt data-tilt-scale=" 1.1" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
                         <div class="c-example__tilt-inner-todo">
                         </div>
                         <span id="todo-desc">
-                            <p class="custom">React.JS</p> <a href="/todo-list" class="btn btn-secondary"> View</a>
+                            <p class="custom">React.JS</p> <a href="/todolist" class="btn btn-secondary"> View</a>
                         </span>
                     </div>
                 </div>
