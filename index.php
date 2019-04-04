@@ -42,47 +42,47 @@
         <div class="row">
 
             <!-- Guusto -->
-            <div class="col-lg-4 col-md-6 nopadding">
+            <div class="col-lg-6 nopadding">
 
-                <div class="card">
-
-                    <div class="[ c-example__tilt-guusto ] js-tilt data-tilt-scale=" 1.1" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <div class="c-example__tilt-inner-guusto">
-                        </div>
-                        <span id="guusto-desc">
-                            <p class="custom">UI and Web Development</p> <a href="guusto.php" class="btn btn-primary">View</a>
-                        </span>
-                    </div>
-
+                <div class="col-lg-6">
+                    <img class="home" src="../img/guusto-banner.png" />
+                </div>
+                <div class="col-lg-6">
+                    text
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="row">
 
 
             <!-- React To Do List -->
             <div class="col-lg-4 col-md-6 nopadding">
                 <div class="card">
-                    <div class="[ c-example__tilt-todo]  js-tilt data-tilt-scale=" 1.1" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                    <div class="[ c-example__tilt-todo ]  js-tilt data-tilt-scale=" 1.1" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
                         <div class="c-example__tilt-inner-todo">
+
                         </div>
                         <span id="todo-desc">
-                            <p class="custom">React.JS</p> <a href="/todolist" class="btn btn-secondary"> View</a>
+                            <p class="custom">React.JS</p> <a href="todolist.php" class="btn btn-secondary"> View</a>
                         </span>
                     </div>
                 </div>
             </div>
 
 
-            <!-- React Petfinder -->
+            <!--Hometown Pets -->
             <div class="col-lg-4 col-md-6 nopadding">
                 <div class="card">
-                    <div class="[ c-example__tilt-petfinder ] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <span id="infinite-desc">
-                            <p class="custom">UI Concept</p>
-                            <a href="infinite-yoga.php" class="btn btn-outline-secondary"> View</a>
+                    <div class="[ c-example__tilt-pets js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                        <span id="pets-desc">
+                            <p class="custom">React.js</p>
+                            <a href="hometown-pets.php" class="btn btn-pets"> View</a>
                         </span>
 
-                        <div class="c-example__tilt-inner-petfinder">
+                        <div class="c-example__tilt-inner-pets">
                             <div></div>
                         </div>
 
@@ -202,4 +202,4 @@
 
 </body>
 
-</html> 
+</html>

@@ -16,7 +16,9 @@ html, body {
   background: #fff;
 }
 
-
+.card:hover{
+  cursor:pointer;
+}
 
 /* TEXT STYLES */
 .h1, h1{
@@ -96,8 +98,6 @@ ul{
 li {
   font-size: 1rem;
   color: #282D48;
-  margin-left: 10%;
-  list-style-type: none;
   padding-top:5px;
   padding-bottom:5px;
   &.column {
@@ -526,7 +526,7 @@ svg.svg-inline--fa.fa-heart{
   height: 400px;
   display: block;
   background-color: white;
-  background-image: url('../img/guusto-background.png');
+  background-image: url('../img/guusto-background.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -541,7 +541,7 @@ svg.svg-inline--fa.fa-heart{
   -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
   transform: translateZ(50px) translateY(-50%) translateX(-50%);
   position: absolute;
-  top: 42%;
+  top: 39%;
   left: 50%;
   width: 50px;
   background-image: url('../img/guusto-inner.png');
@@ -578,7 +578,7 @@ svg.svg-inline--fa.fa-heart{
   height: 400px;
   display: block;
   background-color:white;
-  background-image: url('../img/guusto-background.png');
+  background-image: url('../img/todolist-background.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -595,8 +595,8 @@ svg.svg-inline--fa.fa-heart{
   position: absolute;
   top: 42%;
   left: 50%;
-  width: 50px;
-  background-image: url('../img/todolist-inner.png');
+  width: 70px;
+  background-image: url('../img/todo-inner.png');
   height: 70px;
   background-color: none;
   background-repeat: no-repeat;
@@ -624,6 +624,69 @@ svg.svg-inline--fa.fa-heart{
   display: block;
 }
 
+/* Hometown Pets*/
+.c-example__tilt-pets {
+  width: 100%;
+  height: 400px;
+  display: block;
+
+  
+  background-image: url('../img/pets-background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(300px);
+  transform: perspective(300px);
+}
+
+.c-example__tilt-inner-pets {
+  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
+  transform: translateZ(50px) translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 48%;
+  left: 55%;
+  width: 230px;
+  background-image: url('../img/pets-inner.png');
+  height: 90px;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; 
+}
+
+.c-example__tilt-pets{
+  transition: transform 1s;
+}
+
+
+/* on hover show description  */
+#pets-desc {
+  position:absolute;
+  bottom: 4%;
+  display: none;
+  padding: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#4673b7;
+}
+
+.c-example__tilt-pets:hover #pets-desc{
+  display: block;
+}
+
+.btn-pets{
+  background: #f5e389;
+  background-color: -moz-linear-gradient(left,#f5e389 0,#ffbad1 100%);
+  background: -webkit-gradient(left top,right top,color-stop(0,#f5e389),color-stop(100%,#ffbad1));
+  background: -webkit-linear-gradient(left,#f5e389,#ffbad1);
+  background: -o-linear-gradient(left,#f5e389 0,#ffbad1 100%);
+  background: -ms-linear-gradient(left,#f5e389 0,#ffbad1 100%);
+  background: linear-gradient(90deg,#f5e389 0,#ffbad1);
+  color:white;
+}
 
 /* Shutter Thunder */
 

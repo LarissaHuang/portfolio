@@ -26,16 +26,16 @@ gulp.task('js', function () {
 
 ///// Compile Home Page /////
 gulp.task('home', function () {
-  return gulp.src('./scss/styles.scss')
-      .pipe(plumber())
-      .pipe(sourcemaps.init())
-      .pipe(sass())
-      .pipe(sass( {outputStyle: 'compressed'} ))
-      .pipe(autoprefixer('last 2 versions'))
-      .pipe(concat('styles.css'))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest('./css/'))
-      .pipe(browserSync.stream())
+    return gulp.src('./scss/styles.scss')
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(concat('styles.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./css/'))
+        .pipe(browserSync.stream())
 });
 
 ///// Compile About Page /////
@@ -44,21 +44,21 @@ gulp.task('about', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('about.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.stream())
 });
-  
+
 ///// Compile Green Pearl Page /////
 gulp.task('green-pearl', function () {
     return gulp.src('./scss/green-pearl.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('green-pearl.css'))
         .pipe(sourcemaps.write('.'))
@@ -72,7 +72,7 @@ gulp.task('hive', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('hive.css'))
         .pipe(sourcemaps.write('.'))
@@ -86,7 +86,7 @@ gulp.task('infinite-yoga', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('infinite-yoga.css'))
         .pipe(sourcemaps.write('.'))
@@ -100,7 +100,7 @@ gulp.task('nomnomsox', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('nomnomsox.css'))
         .pipe(sourcemaps.write('.'))
@@ -114,7 +114,7 @@ gulp.task('shutter', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('shutter-thunder.css'))
         .pipe(sourcemaps.write('.'))
@@ -128,9 +128,52 @@ gulp.task('tag', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('tag-heuer-interactive.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./css/'))
+        .pipe(browserSync.stream())
+});
+
+
+///// Compile To Do Page /////
+gulp.task('todo', function () {
+    return gulp.src('./scss/todo.scss')
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(concat('todo.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./css/'))
+        .pipe(browserSync.stream())
+});
+
+///// Compile Pets Page /////
+gulp.task('pets', function () {
+    return gulp.src('./scss/pets.scss')
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(concat('pets.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./css/'))
+        .pipe(browserSync.stream())
+});
+
+///// Compile Guusto Page /////
+gulp.task('guusto', function () {
+    return gulp.src('./scss/guusto.scss')
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(concat('guusto.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.stream())
@@ -142,7 +185,7 @@ gulp.task('contact', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sass( {outputStyle: 'compressed'} ))
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(concat('contact-form.css'))
         .pipe(sourcemaps.write('.'))
@@ -153,11 +196,11 @@ gulp.task('contact', function () {
 
 
 ///// Browser Sync /////
-gulp.task('browser-sync', function(){
+gulp.task('browser-sync', function () {
     browserSync.init({
         proxy: "http://portfolio-2.localhost",
     });
-    gulp.watch('./scss/*.scss', ['home', 'about', 'green-pearl', 'hive', 'infinite-yoga', 'nomnomsox', 'shutter', 'tag', 'contact']);
+    gulp.watch('./scss/*.scss', ['home', 'about', 'green-pearl', 'hive', 'infinite-yoga', 'nomnomsox', 'shutter', 'tag', 'pets', 'todo', 'guusto', 'contact']);
     gulp.watch('./js/src/*.js', ['js']).on('change', browserSync.reload);
 });
 
