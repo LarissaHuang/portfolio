@@ -1,6 +1,9 @@
 @import "_mixins";
 body.page--tag-heuer{
 
+    a.download{
+        color: black;
+    }
     h1,
     h2 {
         color:#1A8A4C;
@@ -78,6 +81,14 @@ body.page--tag-heuer{
 
     .button-desc{
         justify-content:center;
+        margin-top: 90px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        /* display: flex; */
+        /* -webkit-box-pack: center; */
+        -ms-flex-pack: center;
+        /* justify-content: center; */
+        color: #262934;
     }
 
 

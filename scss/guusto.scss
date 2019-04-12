@@ -1,23 +1,116 @@
-body.page--hive{
-    h1{
-      margin-top: 5%;
-      margin-left: 5%;
-    }
-  
-    h2 {
-      color: #fec002;
-    }
-  
-    h3{
-      color:#282D48;
-    }
-    h4 {
-      color: #63D6A3;
-    }
-    h5 {
-      font-size: 0.75rem;
-    }
-    .tools{
-      color: #ffc005;
-    }
+
+
+.wrap{
+  justify-content: flex-start;
+}
+
+.margin{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.contain{
+  height:auto;
+}
+
+.row{
+  max-height:unset;
+}
+
+.guusto-wordmark{
+  max-width:400px;
+}
+
+body{
+  font-family:Cabin;
+}
+
+.key{
+  display: block;
+  float:left;
+  border-radius:15px;
+}
+
+
+
+#block{
+  display:block;
+}
+
+.keygroup{
+  display: flex;
+  flex-direction: column;
+  margin-top:-10px;
+}
+
+.line { 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height:2px; 
+  border:none; 
+  opacity:0.3;
+  color:white;
+}
+
+.title{
+  padding:0px;
+  margin:0;
+  margin-bottom:15px;
+  margin-top:30px;
+}
+
+a.marketing{
+  color:grey;
+}
+
+a.marketing:hover{
+  color:#03CBBC;
+}
+
+
+
+@media (min-width:567px){
+  .view{
+    justify-content: center;
   }
+  
+
+}
+
+@media (max-width:567px){
+  .keygroup{
+    flex-direction:row;
+  }
+  .line{
+    display:none;
+  }
+  .view{
+
+    flex-direction:row;
+  }
+  
+}
+
+.view a{ 
+  float:right;
+}
+
+.base{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  float:right;
+  margin-top:100px;
+}
+
+.view{
+  align-items: flex-end;
+  position:relative;
+  bottom:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn-guusto{
+  margin-top:20px;
+}

@@ -15,12 +15,21 @@ h3 {
 
 .key {
   font-size:18px;
+  margin-bottom:20px;
+  }
+
+  .margin{
+    margin-bottom:20px;
+  }
+
+  #react{
+    margin-top:30px;
   }
 
   li.react-item {
     list-style-type:none;
     padding: 10px 16px;
-    margin: 10px 0px;
+    margin: 10px 32px;
     cursor:pointer;
     background-color: beige;  
     border-radius:9px;
@@ -83,9 +92,29 @@ h3 {
 
   .description{
     margin-top:10%;
-    padding-right:30%;
+    // padding-right:30%;
   }
    
+  .demo{
+    display:flex;
+    justify-content: center;
+  }
+
+  .btn-demo{
+    margin-top:30px;
+    border:none; 
+    background-color: #6f6a91;
+    color:white;
+    margin:15px;
+    min-width: 111px;   
+  }
+
+ 
+.btn-demo:hover{
+  background-color:  #ea8b8b;
+  color: white;
+  }
+  
 
   .btn-center{
     margin-top:10px;

@@ -28,9 +28,9 @@
 
                             <label for="Name">Name:</label>
                             <input type="text" name="Name" />
-
+                            <!-- 
                             <label for="City">City:</label>
-                            <input type="text" name="City" />
+                            <input type="text" name="City" /> -->
 
                             <label for="Email">Email:</label>
                             <input type="text" name="Email" />
@@ -48,9 +48,9 @@
         </div>
     </div>
 
-    <p class="social">More of a social media person?</p>
+    <p class="social">Prefer another platform?</p>
     <?php include('connect-with-me.php'); ?>
     <?php include('footer.php'); ?>
 </body>
 
-</html> 
+</html>

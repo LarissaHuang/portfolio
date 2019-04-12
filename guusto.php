@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -6,116 +8,123 @@
     <title>Larissa Huang - Portfolio </title>
 
     <?php include('header-scripts-and-styles.php'); ?>
+
     <link href="css/guusto.css" rel="stylesheet">
+
+
 
 </head>
 
-<body class="page--hive">
+<body>
 
     <?php include('header.php'); ?>
 
-    <!-- Hive Banner -->
-    <section class="hero">
-        <div class="hive-banner-inner" data-aos="slide-right">
-            <img src="img/guusto-banner.png" class="banner" />
+    <!-- Guusto -->
+    <div class="contain">
+        <div class="row row-2">
+            <div class="col-xs-3 col-sm-6 wrap-logo">
+
+                <div class="logo">
+
+                    <img class="guusto-wordmark" src="../img/guusto-page-banner.jpg" />
+                </div>
+
+            </div>
+
+            <div class="col-xs-6 col-sm-6 view">
+
+                <a href="https://app.guusto.com/guusto2/access/index.html" class="btn btn-guusto">Visit Site</a>
+
+
+            </div>
         </div>
+
+        <hr class="line">
+        <div class="row row-2">
+
+
+            <div class="col-sm-3 wrap">
+                <div class="keygroup">
+
+
+                    <p class="key guusto">CSS</p>
+                    <p class="key guusto">Bootstrap</p>
+                    <p class="key guusto">AngularJS<p>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-sm-9">
+                <h3 class="title">Background</h3>
+
+                <p>
+                    Guusto allows companies to recognize employees with team-wide gifts and nominations for work well done. The platform provides gift tracking, expense tracking and flexible gift delivery. For Team Admins, Guusto offers a rich list of parameters to customize how the platform is used.</p>
+
+                <h3 class="title">Objective </h3>
+
+                <p>
+                    My role was to design and code elements on the platform in accordance with modern design best practices while integrating with existing systems.
+
+                    The challenge was delivering a powerful platform for Admins at the same time as providing an uncluttered and intuitive experience for Team Members.
+                </p>
+
+                <h3 class="title">Rearchitecting the Navigation</h3>
+                <p>
+                    I created a Teams submenu in the sidebar navigation accessible only to Admins.
+
+                    In Settings, Team Admins are able to set preferences for the whole team in one place. </p>
+
+
+                <img class="margin" src="../img/guusto-pf-color.jpg">
+
+                <h3 class="title">Updating UI</h3>
+
+                <p>I redesigned widgets (see image on right) to reflect a more vibrant and modern brand. </p>
+
+                <img class="margin" src="../img/guusto-pf-recent.jpeg">
+
+                <p>With Google Charts, I was able to set large figures of relative data in context at a glance.</p>
+                <img class="margin" src="../img/guusto-pf-charts.jpeg">
+
+
+
+                <h3 class="title">Mobile Optimization </h3>
+
+                <p>As Guusto has mobile apps for IOS and Android, so my goal for mobile optimization was not to redesign the platform but to preserve the familiar desktop functionality.</p>
+
+                <img class="margin" src="../img/guusto-pf-mobile.jpg">
+
+                <h3 class="title">Guusto Marketing Site </h3>
+
+                <p>I was also responsible for updating Guusto's <a style="padding:unset;" class="marketing" href="https://guusto.com">marketing site </a>to target Guusto's changing demographics and create case studies.
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
     </section>
 
 
-    <div class="container" data-aos="slide-right">
-        <div class="row padding">
-            <div class="col-md-12">
-                <h1 class="text-center">HIVE</h1>
-                <p class="tools">Photoshop, Illustrator</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" data-aos="slide-right">
-        <div class="row padding">
-            <div class="col-md-12">
-                <h2>WEB DESIGN</h2>
-                <p>In order to produce a realistic web design, I created an identity for my fictional client Hive, a company offering information and technical guidance for urban beekeepers.</p>
-            </div>
-        </div>
-
-        <div class="row padding">
-            <div class="col-md-12" data-aos="slide-up">
-                <h3>SKETCH</h3>
-            </div>
-        </div>
-    </div><?php  ?>
 
 
-    <img class="responsive" src="img/hive-sketches.jpg" />
+    <?php  ?>
 
+    <?php  ?>
 
-    <div class="container">
-        <div class="row padding">
-            <div class="col-md-12" data-aos="slide-up">
-                <p>These thumbnail sketches demonstrate my exploration of logo ideas. My aim was to illustrate a hive structure as a symbol of community.</p>
-            </div>
-        </div>
-
-
-        <div class="row padding">
-            <div class="col-12" data-aos="slide-up">
-                <h3>DESIGN DRAFT & CRITIQUE</h3>
-            </div>
-        </div>
-    </div><?php  ?>
-
-
-    <img class="responsive" src="img/hive-phase1.jpg" />
-
-
-    <div class="container">
-        <div class="row padding">
-            <div class="col-md-12" data-aos="slide-up">
-                <p>The feedback I received on my drafts were the logo and wordmark were too busy, the layout of the web design resembled a blog more than the homepage of an organization providing a service, the navigation links were wordy, and the site looked generic and boxy. </p>
-            </div>
-        </div>
-
-
-        <div class="row padding">
-            <div class="col-md-12" data-aos="slide-up">
-                <h3>HOME PAGE</h3>
-            </div>
-        </div>
-    </div><?php  ?>
-
-
-    <img class="responsive" src="img/FinalWebHive-home.jpg" />
-
-
-    <div class="container">
-        <div class="row padding">
-            <div class="col-md-12" data-aos="slide-up">
-                <p>For my iteration, I simplified the layout, focusing on only the essentials, and worked within an 8-column grid. If I were to carry through to development, I would probably use FullPage.js to create a single page scrolling site.</p>
-            </div>
-        </div>
-
-
-        <div class="row padding">
-            <div class="col-md-12" data-aos="slide-up">
-                <h3>SERVICES PAGE</h3>
-            </div>
-        </div>
-    </div><?php  ?>
-
-
-    <img class="responsive" src="img/FinalWebHive-services.jpg" />
-
-
-    <div class="container">
-        <div class="work-buttons">
-            <a href="tag-heuer-interactive.php" class="btn btn-outline-secondary" data-aos="slide-right" id="previous-btn"> <i class="fas fa-arrow-left"> </i> Previous: Tag Heuer </a>
-            <a href="shutter-thunder.php" class="btn btn-outline-secondary" data-aos="slide-left" id="next-btn"> Next: Shutter Thunder <i class="fas fa-arrow-right"> </i> </a>
-        </div>
-
-    </div><?php  ?>
-
+    <?php include('connect-with-me.php'); ?>
     <?php include('footer.php'); ?>
+
 </body>
 
 </html>

@@ -1,10 +1,6 @@
 header{
     position:relative;
-    background: #5ae8e8; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #5ae8e8 1%, #6473d6 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #5ae8e8 1%,#6473d6 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #5ae8e8 1%,#6473d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ae8e8', endColorstr='#6473d6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: darkslategrey; /* IE6-9 */
     padding: 1em;
     .logo{
         display: block;
@@ -49,6 +45,9 @@ header{
         a.nav-link{
             text-align:center;
         }
+        a.nav-link:hover{
+            color:goldenrod;
+        }
        
         .navbar-toggler{
            position: absolute;
@@ -63,7 +62,11 @@ header{
 }
 
 .navbar-light .navbar-nav .nav-link {
- color: #fff;          
+ color:white;          
+}
+
+.navbar-light :hover{
+  
 }
 
 

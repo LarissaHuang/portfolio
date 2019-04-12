@@ -1,57 +1,187 @@
-body.page--infinite-yoga{
-  $yoga: #63d4a1;
 
-  h1,
-  h2,
-  h3{
-    color: $yoga;
-  }
+.wrap{
+  justify-content: flex-start;
+}
 
-  .full-width{
-    width: 100%;
-  }
 
-  .hero-text{
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 1;
-    margin: 0 auto;
-    color: $yoga;
-  }
+.section{
+  height:100%;
+}
 
-  p.bold{
-    font-size: 25px;
-    display: block;
-    color: grey;
+.title{
+  margin:0;
+  margin-top:40px;
+  margin-bottom:10px;
+}
+
+.contain{
+  height:auto;
+}
+
+.pullright{
+  float:right;
+}
+
+.row{
+  max-height:unset;
+}
+
+.yoga--logo{
+  max-height:200px;
+  width:auto;
+  margin-left: 0;
+}
+
+
+body{
+  font-family:Cabin;
+}
+
+.key{
+  display: block;
+  float:left;
+  border-radius:15px;
+}
+
+
+
+#block{
+  display:block;
+}
+
+.keygroup{
+  display: flex;
+  flex-direction: column;
+  margin-top:-10px;
+}
+
+.line { 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height:2px; 
+  border:none; 
+  opacity:0.3;
+  color:white;
+  
+  
+}
+
+@media (min-width:567px){
+  .view{
+    justify-content: center;
   }
   
-  p.quote-src{
-    line-height: 1rem;
-    margin-top: 0;
-    float: right;
-    color:#262b50;
+
+}
+
+@media (max-width:567px){
+  .keygroup{
+    flex-direction:row;
   }
+  .line{
+    display:none;
+  }
+  .view{
 
-
-  .prototype-bg{
-    background-color:#cad2dd;
+    flex-direction:row;
   }
   
-  .iteration-background{
-    background-color:#e4e4e4;
-  }
-  
-  .phase1-background{
-    background-color: white;
-  }
+}
 
-  img.market-review{
-    max-height: 300px;
-    width: auto;
-  }
+.view a{ 
+  float:right;
+}
 
-  img.comparable-companies{
+.base{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  float:right;
+  margin-top:100px;
+}
+
+.view{
+  align-items: flex-end;
+  position:relative;
+  bottom:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn-guusto{
+  margin-top:20px;
+}
+
+#myImg {transition: all .2s ease-in-out; }
+
+#myImg:hover{
+transform:scale(1.05);
+cursor:pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
     width: 100%;
   }
 }

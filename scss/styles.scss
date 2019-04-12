@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+
 @import "_mixins";
 @import "header";
 @import "footer";
@@ -6,19 +6,197 @@
 // *{
 //   border: 1px solid red;
 // }
-
+ 
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  font-weight:300px;
   color: #222;
   margin: 0;
   background: #fff;
+  overflow-x:hidden;
+}
+
+.title{
+  display:block;
+  font-size:20px;
+  padding:5px;
+  margin:5px;
+  font-size:'Poppins', sans-serif;
+}
+
+.key{
+  font-family:'Poppins', sans-serif;
+}
+
+
+img{
+  width: 100%;
+  height:auto;
+}
+
+.wrap{
+  display:flex;
+   justify-content: center;
+}
+
+.wrap-logo{
+  display:flex;
+  justify-content: left;
+
+}
+
+
+
+.contain{
+  max-width: 1280px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin: 0 auto;
+}
+
+section {
+  min-height: 500px;
+}
+
+.logo{
+justify-content: left;
+  margin:5px;
+
+  display: block;
+  margin: 0px;
+}
+
+.label{
+  display: block;
+  margin: 0 auto;
+}
+
+.logo--guusto{
+  max-width:150px;
+  margin:0px;
+ 
+}
+
+.logo--todo{
+  max-width:70px;
+  margin:0px;
+  display:inline;
+ 
+}
+.preview{
+  width:450px; 
+  max-width:100%; 
+  max-height:450px;
+}
+
+.home{
+  max-height:400px;
+  width:auto;
+}
+.no-overflow{
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.row{
+  max-height:760px;
+  cursor:pointer;
+  margin-right: unset; 
+   margin-left: unset; 
+}
+
+.grow { transition: all .2s ease-in-out; }
+
+.grow:hover { transform: scale(1.03); }
+
+.logo-right{
+  max-height: 70px;
+  width:auto;
+  margin:unset;
+  margin-top:180px;
+  float:left;
+}
+
+
+
+.logo-pearl{
+  max-height: 70px;
+  width:auto;
+  margin:unset;
+  margin-top:90px;
+  margin-left:40px;
+  float:left;
+}
+
+.logo-bg{
+  background-image: url(../img/todo-inner.png) ;
+  background-repeat:no-repeat;
+  width:auto;
+  margin:unset;
+  margin-top:70px;
+  float:left;
+  margin:0;
+}
+
+.logo--shutter{
+  max-width:200px;
+  margin:0px;
+  margin-left:5px;
+ 
+
+
+}
+
+.key{
+  opacity:unset;
+  color:black;
+  opacity:1;
+  font-size:15px;
+  display:inline;
+  padding:5px;
+  margin:5px;
+ }
+
+ .keygroup{
+   display: block;
+ }
+
+
+
+.btn-guusto{
+  background-color: #13122A;
+  color:white;
+  margin:15px;
+  min-width: 111px;
+  float:left;
+}
+
+ 
+.btn-guusto:hover{
+background-color:  #03CBBC;
+color: white;
+}
+
+.guusto{
+  color:#13122A;
+}
+   
+.small li{
+  font-size:15px;
+}
+.nopadding{
+  padding-left:-15px;
+  padding-right:-15px;
 }
 
 .card:hover{
   cursor:pointer;
 }
+
 
 /* TEXT STYLES */
 .h1, h1{
@@ -37,7 +215,6 @@ h1.display-3resc {
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #518ad5;
   margin-bottom: 1em;
@@ -49,9 +226,37 @@ h2 {
     font-size: 45px;
     color:white;
     padding-top:4%;
-    font-family:Arial, Helvetica, sans-serif;
   }
 }
+
+.removepadding{
+  padding-right:-30px;
+}
+
+.download{
+  display:block;
+  font-size:15px;
+  color:grey;
+  margin-top:0px;
+}
+
+.logo--yoga{
+  max-width:150px;
+  margin-left:10px;
+}
+
+
+.logo--tag{
+  max-width:150px;
+  margin:0px;
+  margin-left: -9px;
+}
+
+.tagcard{
+  margin-top:-50px;
+  max-width:200px;
+}
+
 
 h3{
   font-size: 1.5rem;
@@ -71,9 +276,9 @@ h5 {
 
 
 p {
-  font-size: 1rem;;
+  font-size: 1.1rem;;
   line-height: 2em;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   
   &.custom {
     text-align: center;
@@ -109,142 +314,11 @@ li {
   }
 }
 
-blockquote{
-  margin-top: 5%;
-  margin-bottom: 1px;
-  padding-left: 15px;
-  border-left: 3px solid #63D6A3;
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
-  color: #a7a7ab;
-}
- 
+
 
 .lead {
   text-align: center;
 }
-
-
-// HOMEPAGE BANNER
-.banner-full{
- 
-  .desk{
-    background-image:  url("/img/desk-items.jpg");
-    position:relative;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-  }
- 
-  height:610px;
-  @include mq($max, $tiny){
-    height: 500px;
-  }
-}
-
-.banner-left {
-  position: absolute;
-  top: 43%;
-  width: 100%;
-  height: 200px; 
-  float: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-}
-
-.banner-right {
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  top: 64%;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  overflow: hidden;
-}
-
-.banner-full{
-background:#12151c;
-}
-/* DEV Animation */
-img.developer {
-  height: 200px;
-  position: absolute;
-  animation: out-dev ease-out 1.5s;
-  right:-200%;
-  transform:scale(0.8);
-  @include mq($max, $tiny){
-    width: 100%;
-    height: auto;
-  }
-}
-
-.banner-left:hover img.developer{
-  animation: in-dev ease-in-out 0.2s;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes in-dev{
-  from {right: -100%; }
-  to {right: 12%; }    
-}
-
-@-webkit-keyframes out-dev {
-  0%   {right: 12%; }
-  100% {right: -100%; }
-}
-
-
-
-/* DESIGNER Animation */
-img.designer {
-  height: 9.5%;
-  position: absolute;
-  top: 22%;
-  left: 100%;
-  animation: out-des ease-out 1.5s;
-  transform:scale(0.8);
-  @include mq($max, $tiny){
-
-  }
-}
- 
-.banner-right:hover img.designer{
-  animation: in-des ease-in-out 0.3s;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes in-des{
-  from {left: -100%;}
-  to {left: 12%;} 
-}
-
-@-webkit-keyframes out-des {
-  0%  {left: 12%;}
-  100%  {left: -100%;}
-}
-
-.person{
-  width: auto;
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translateX(-50%); 
-}
-
-.person img{
-  width: 100%;
-  height: auto;
-}
-
-.clear{
-  clear: both;
-}
-
-
 
 
 // SUBPAGE HERO BANNER
@@ -257,15 +331,18 @@ img.designer {
     position:relative;
   }
   img {
-    
+    display:block;
     width:100%;
     height:auto;
   }
 
+  section .row{
+    flex-wrap: wrap;
+    padding: 0;
+  }
 
   .hero-text{
     line-height: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     opacity: 1;
     display: block;
@@ -278,7 +355,6 @@ img.designer {
 
 .tools{
   font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
   display: block;
   text-align: center;
   width: 100%;
@@ -301,7 +377,7 @@ img.designer {
   width: 64px;
   height: 41px;
   display: block;
-  margin: 0 auto;
+  margin: 10px;
   padding-top: 8px;
 }
 
@@ -352,8 +428,11 @@ a#next-btn.btn.btn-outline-secondary{
   height: auto;
 }
 
-
-
+.divider{
+  padding-top:20px;
+  padding-bottom:20px;
+  border-top: 1px solid white;
+}
 /* IMAGE STYLES */
 img,
 video{
@@ -363,8 +442,19 @@ video{
 }
 
 video{
-  width: 100%;
+max-width:600px;
   height: auto;
+  padding:15px;
+  padding-left:90px;
+  padding-right:90px;
+}
+
+@media(max-width:767px){
+  video{
+    max-width:300px;
+    padding:0px;
+  }
+
 }
 
 img.responsive{
@@ -496,561 +586,6 @@ svg.svg-inline--fa.fa-heart{
 }
 
 
-
-/*Card Tilt Effect*/
-// .c-test {
-//   position: relative;
-//   width: auto;
-//   height: auto;
-//   margin: 0 auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-color: lightgrey;
-//   transform-style: preserve-3d;
-// }
-
-// img.c-test-inner {
-//   will-change: transform;
-//   transition: .15s;
-//   position: absolute;
-//   width: calc(100% - 63%);
-//   height: calc(100% - 50%);
-//   background-color: transparent;
-//   transform: translateZ(100px) scale(0.5);  
-// }
-
-/* Guusto */
-.c-example__tilt-guusto {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: white;
-  background-image: url('../img/guusto-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-}
-
-.c-example__tilt-inner-guusto {
-  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 39%;
-  left: 50%;
-  width: 50px;
-  background-image: url('../img/guusto-inner.png');
-  height: 70px;
-  background-color: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center; 
-}
-
-.c-example__tilt-guusto{
-  transition: transform 1s;
-}
-
-
-/* on hover show description  */
-#guusto-desc {
-  position:absolute;
-  bottom: 4%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color:#4673b7;
-}
-
-.c-example__tilt-guusto:hover #guusto-desc{
-  display: block;
-}
-
-/* React To Do List */
-.c-example__tilt-todo {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color:white;
-  background-image: url('../img/todolist-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-}
-
-.c-example__tilt-inner-todo {
-  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  width: 70px;
-  background-image: url('../img/todo-inner.png');
-  height: 70px;
-  background-color: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center; 
-}
-
-.c-example__tilt-todo{
-  transition: transform 1s;
-}
-
-
-/* on hover show description  */
-#todo-desc {
-  position:absolute;
-  bottom: 4%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color:#4673b7;
-}
-
-.c-example__tilt-todo:hover #todo-desc{
-  display: block;
-}
-
-/* Hometown Pets*/
-.c-example__tilt-pets {
-  width: 100%;
-  height: 400px;
-  display: block;
-
-  
-  background-image: url('../img/pets-background.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-}
-
-.c-example__tilt-inner-pets {
-  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 48%;
-  left: 55%;
-  width: 230px;
-  background-image: url('../img/pets-inner.png');
-  height: 90px;
-  background-color: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center; 
-}
-
-.c-example__tilt-pets{
-  transition: transform 1s;
-}
-
-
-/* on hover show description  */
-#pets-desc {
-  position:absolute;
-  bottom: 4%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color:#4673b7;
-}
-
-.c-example__tilt-pets:hover #pets-desc{
-  display: block;
-}
-
-.btn-pets{
-  background: #f5e389;
-  background-color: -moz-linear-gradient(left,#f5e389 0,#ffbad1 100%);
-  background: -webkit-gradient(left top,right top,color-stop(0,#f5e389),color-stop(100%,#ffbad1));
-  background: -webkit-linear-gradient(left,#f5e389,#ffbad1);
-  background: -o-linear-gradient(left,#f5e389 0,#ffbad1 100%);
-  background: -ms-linear-gradient(left,#f5e389 0,#ffbad1 100%);
-  background: linear-gradient(90deg,#f5e389 0,#ffbad1);
-  color:white;
-}
-
-/* Shutter Thunder */
-
-.c-example__tilt {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: black;
-  background-image: url('../img/shutter-thunder-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-}
-
-.c-example__tilt-inner {
-  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  background-image: url('../img/shutter-thunder-logo.png');
-  height: 50px;
-  background-color: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center; 
-}
-
-.c-example__tilt{
-  transition: transform 1s;
-}
-
-
-/* on hover show description  */
-#shutter-desc {
-  position:absolute;
-  bottom: 9%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color:#4673b7;
-}
-
-.c-example__tilt:hover #shutter-desc{
-  display: block;
-}
-
-
-/* Green Pearl */
-.c-example__tilt2 {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: #b6d3c2;
-  background-image: url('../img/green-pearl-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-}
-
-.c-example__tilt-inner2 {
-  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  width: 70px;
-  height: 70px;
-  background-image: url('../img/green-pearl-inner.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-/* on hover show description  */
-#green-desc {
-  position:absolute;
-  bottom: 10%;
-  display: none;
-  color: #016737;
-  margin-top: 10px;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%)
-}
-
-.c-example__tilt2:hover #green-desc{
-  display: block;
-}
-
-
-/* -------------------------------- Infinite Yoga -------------------------------- */
-.c-example__tilt3 {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: #fff;
-  background-image: url('../img/infinite-yoga-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-}
-
-#infinite-desc {
-  position:absolute;
-  bottom: 6%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #62d6a3;
-}
-
-.c-example__tilt3:hover #infinite-desc{
-  display: block;
-}
-
-/* infinite yoga logo squares - 3D effect*/
-.c-example__tilt-inner3-1{
-  -webkit-transform: translateZ(30px) translateY(-50%) translateX(-50%);
-  transform: translateZ(30px) translateY(-50%) translateX(-50%);
-  position: relative;
-  top: 46%;
-  left: 50%;
-  width: 33px;
-  height: 33px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-
-.square {
-  border: 1px solid #63d6a3;
-  height: 100%;
-  width: 100%;
-  border-radius: 7px;
-  transform: rotate(45deg) translateX(-50%);
-  transform-origin: 0 100%;
-}
-
-.bottom-square {
-  border: 1px solid #63d6a3;
-  background-color: #63d6a3;
-}
-.c-example__tilt-inner3-2{
-  -webkit-transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  transform: translateZ(50px) translateY(-50%) translateX(-50%);
-  position: relative;
-  top: 35%;
-  left: 50%;
-  width: 33px;
-  height: 33px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-.middle-square{
-  border: 1px solid #478968;
-}
-
-.c-example__tilt-inner3-3{
-  -webkit-transform: translateZ(70px) translateY(-50%) translateX(-50%);
-  transform: translateZ(70px) translateY(-50%) translateX(-50%);
-  position: relative;
-  top: 24%;
-  left: 50%;
-  width: 33px;
-  height: 33px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-.top-square{
-  border: 1px solid #3b6d54;
-  transform: scale(1) rotate(45deg) translateX(-50%);
-}
-
-
-.infinite-body{
-  clear: both;
-}
-
-
-
-
-/* NomNomSox */
-.c-example__tilt4 {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: #fff;
-  background-image: url('../img/nomnom-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-  @include mq($max, $small){
-    background-size: 70%;
-  }
-  @include mq($max, $tiny){
-    background-size: contain;
-  }
-}
-
-.c-example__tilt-inner4 {
-  -webkit-transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16%;
-  height: 23%;
-  background-image: url(../img/nomnomsox-logomark2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-} 
-
-
-#nomnom-desc {
-  position: absolute;
-  bottom: 4%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #ec6631;
-}
-.c-example__tilt4:hover #nomnom-desc{
-  display: block;
-}
-
-
-/* Tag Heuer */
-.c-example__tilt5 {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: #eee;
-  background-image: url('../img/tag-heuer-background.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-  @include mq($max, $small){
-    background-size: 70%;
-  }
-  @include mq($max, $tiny){
-    background-size: contain;
-  }
-}
-
-.c-example__tilt-inner5 {
-  -webkit-transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 50%;
-  left: 49.6%;
-  width: 55px;
-  height: 55px;
-  background-image: url('../img/tag-logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-
-#tag-desc{
-  position: absolute;
-  bottom: 4%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #00653e;
-}
-
-
-.c-example__tilt5:hover #tag-desc{
-  display: block;
-}
-
-
-
-
-/* Hive */
-.c-example__tilt6 {
-  width: 100%;
-  height: 400px;
-  display: block;
-  background-color: white;
-  background-image: url('../img/hive-background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: perspective(300px);
-  transform: perspective(300px);
-  @include mq($max, $small){
-    background-size: 70%;
-  }
-  @include mq($max, $tiny){
-    background-size: contain;
-  }
-}
-
-.c-example__tilt-inner6 {
-  -webkit-transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  transform: translateZ(90px) translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 50%;
-  left: 49.6%;
-  width: 35px;
-  height: 35px;
-  background-image: url('../img/hive-inner.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-#hive-desc {
-  position: absolute;
-  bottom: 8%;
-  display: none;
-  padding: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: black;
-}
-.c-example__tilt6:hover #hive-desc{
-  display: block;
-}
-
-
 a.back-home{
   display:block;
   text-align: center;
@@ -1063,135 +598,15 @@ a.back-home{
   padding: 3em;
 }
 
+video{
+  max-width:"600";
+   height:auto;
+}
 
 
 /*---===============================
-      M E D I A   Q U E R I E S
+      CONNECT WITH ME
 ================================ --*/
-
-
-@media (max-width: 1200px) {
-  .person{
-    bottom:0%;
-  }
-  
-  div[class*=box] {
-    width: 70%;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-    border: 3px solid whitesmoke;
-    border-radius: 120px;
-    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.75);
-  }
-  svg.svg-inline--fa{
-  font-size: 2.5rem;
-  }
-  
-  .box-2:hover .icon {
-    margin: 0 12%;
-  }     
-}
-
-
-@media (max-width: 992px) {
-
-    img.developer{
-   
-    }
-    .person{
-      top:30%;
-    }
-    img.designer{
-  
- 
-    }
-    
-    div[class*=box] {
-      width: 70%;
-      height: 100px;
-      overflow: hidden;
-      position: relative;
-      border: 3px solid whitesmoke;
-      border-radius: 120px;
-      box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.75);
-    }
-    svg.svg-inline--fa{
-      font-size: 2.5rem;
-    }
-
-    .box-2:hover .icon{
-      margin: 0 9%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    img.designer,
-    img.developer{
-     
-    }
-
-    h2.lead{
-      font-size:1.6rem;
-      padding-top:10%;
-    }
-
-.box-2 .layer {
-  transition: 0.4s 0s;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-}
-
-
-.box-2 .icon {
-  opacity: 1;
-  -webkit-transform: translateY(-353%);
-          transform: translateY(-353%);
-  margin: 0 8%;
-}
-
-    #shutter-desc,
-    #green-desc,
-    #infinite-desc,
-    #nomnom-desc,
-    #tag-desc,
-    #hive-desc{
-      display:block;
-    }
-
-    a.icon {
-      opacity: 1;
-      -webkit-transform: translateY(-353%);
-              transform: translateY(-353%);
-      margin: 0 12%;
-      display: inline-block;
-    }
-
-    img.designer{
-      
-    }
-    img.developer{
-      
-    }
-   
-    
-    .banner-right:hover img.designer,
-    .banner-left:hover img.developer{
- 
-    }
-    .banner-left,
-    .banner-right{
-      width: 100%;
-      float: none;
-      overflow: visible;
-    }
-  .banner-full .resoonsive{
-    top: 5%; 
-  }
-    .person{
-      top:28%;
-    }
     
     div[class*=box] {
     width: 100%;
@@ -1208,7 +623,6 @@ a.back-home{
     a {
       padding-left: 7%;
       }
-}
 
 
 @media (max-width: 576px) {
@@ -1228,45 +642,13 @@ a.back-home{
     display: inline-block;
   }
  
-    h2.lead{
-        font-size: 1.6rem;
-        padding-top: 15%;
-        
-    }
-    
+ 
     p.custom {
       margin-bottom: 3%;
       text-align: center;
     }
 
-    img.designer,
-    img.developer{
-      animation-name: none;
-      right:0%;
-      top:50%;
-    }
-    
-    img.designer{
-      left:0%;
-      top: 85%;
-    }
-    img.developer{
-      
-    }
-    
-    .banner-right:hover img.designer,
-    .banner-left:hover img.developer{
-      animation-name: none;
-    }
-    
-    .banner-left,
-    .banner-right{
-      position: absolute;;
-      top:28%;
-      width: 100%;
-      float:none;
-      overflow: visible;
-    }
+
 
     
     div[class*=box] {
@@ -1320,21 +702,6 @@ a.back-home{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* BOUNCING LOGO  */
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
@@ -1371,4 +738,27 @@ a.back-home{
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
+}
+.intro{
+  font-size: 1.1rem;
+  font-family: cabin;
+  line-height: 2em;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: darkslategrey;
+}
+
+img.intro-photo{
+  height: 330px;
+  width: 230px;
+  padding:30px;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+.fa-download{
+  height:25px;
+  width:25px;
 }

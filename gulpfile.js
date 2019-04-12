@@ -39,46 +39,19 @@ gulp.task('home', function () {
 });
 
 ///// Compile About Page /////
-gulp.task('about', function () {
-    return gulp.src('./scss/about.scss')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(concat('about.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.stream())
-});
+// gulp.task('about', function () {
+//     return gulp.src('./scss/about.scss')
+//         .pipe(plumber())
+//         .pipe(sourcemaps.init())
+//         .pipe(sass())
+//         .pipe(sass({ outputStyle: 'compressed' }))
+//         .pipe(autoprefixer('last 2 versions'))
+//         .pipe(concat('about.css'))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest('./css/'))
+//         .pipe(browserSync.stream())
+// });
 
-///// Compile Green Pearl Page /////
-gulp.task('green-pearl', function () {
-    return gulp.src('./scss/green-pearl.scss')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(concat('green-pearl.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.stream())
-});
-
-///// Compile Hive Page /////
-gulp.task('hive', function () {
-    return gulp.src('./scss/hive.scss')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(concat('hive.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.stream())
-});
 
 ///// Compile IY Page /////
 gulp.task('infinite-yoga', function () {
@@ -94,19 +67,6 @@ gulp.task('infinite-yoga', function () {
         .pipe(browserSync.stream())
 });
 
-///// Compile nomnomsox Page /////
-gulp.task('nomnomsox', function () {
-    return gulp.src('./scss/nomnomsox.scss')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(concat('nomnomsox.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.stream())
-});
 
 ///// Compile shutter thunder Page /////
 gulp.task('shutter', function () {
@@ -152,18 +112,18 @@ gulp.task('todo', function () {
 });
 
 ///// Compile Pets Page /////
-gulp.task('pets', function () {
-    return gulp.src('./scss/pets.scss')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(autoprefixer('last 2 versions'))
-        .pipe(concat('pets.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.stream())
-});
+// gulp.task('pets', function () {
+//     return gulp.src('./scss/pets.scss')
+//         .pipe(plumber())
+//         .pipe(sourcemaps.init())
+//         .pipe(sass())
+//         .pipe(sass({ outputStyle: 'compressed' }))
+//         .pipe(autoprefixer('last 2 versions'))
+//         .pipe(concat('pets.css'))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest('./css/'))
+//         .pipe(browserSync.stream())
+// });
 
 ///// Compile Guusto Page /////
 gulp.task('guusto', function () {
@@ -200,7 +160,7 @@ gulp.task('browser-sync', function () {
     browserSync.init({
         proxy: "http://portfolio-2.localhost",
     });
-    gulp.watch('./scss/*.scss', ['home', 'about', 'green-pearl', 'hive', 'infinite-yoga', 'nomnomsox', 'shutter', 'tag', 'pets', 'todo', 'guusto', 'contact']);
+    gulp.watch('./scss/*.scss', ['home', 'infinite-yoga', 'shutter', 'tag', 'todo', 'guusto', 'contact']);
     gulp.watch('./js/src/*.js', ['js']).on('change', browserSync.reload);
 });
 

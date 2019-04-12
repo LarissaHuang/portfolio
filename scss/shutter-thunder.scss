@@ -1,39 +1,92 @@
-.subhead {
-  font-size: 1rem;
-  font-weight: bold;
+
+
+.wrap{
+  justify-content: flex-start;
 }
 
-h3 {
-  font-weight: 600;
+
+body{
+  font-family:Cabin;
 }
 
-h2 {
-  margin-top: 1em;
-  margin-bottom:none;
+.key{
+  display: block;
+  float:left;
+  border-radius:15px;
 }
 
-@media (max-width: 500px) {
 
-  .tools {
-    font-size: 0.8rem;
-  }
-  .h1, h1 {
-    font-size: 2rem;
-  }
+
+#block{
+  display:block;
 }
 
-@media (max-width: 400px) {
-
-  .tools {
-    font-size: 0.8rem;
-  }
-  .h1, h1 {
-    font-size: 1.8rem;
-  }
-  p{
-    font-size:0.8rem;
-    padding-left:0%;
-    padding-right:0%;
-  }
+.keygroup{
+  display: flex;
+  flex-direction: column;
+  margin-top:-10px;
 }
 
+.line { 
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height:2px; 
+  border:none; 
+  opacity:0.3;
+  color:white;
+  
+  
+}
+
+.title{
+  padding:0px;
+  margin:0;
+  margin-bottom:10px;
+}
+
+@media (min-width:567px){
+  .view{
+    justify-content: center;
+  }
+  
+
+}
+
+@media (max-width:567px){
+  .keygroup{
+    flex-direction:row;
+  }
+  .line{
+    display:none;
+  }
+  .view{
+
+    flex-direction:row;
+  }
+  
+}
+
+.view a{ 
+  float:right;
+}
+
+.base{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  float:right;
+  margin-top:100px;
+}
+
+.view{
+  align-items: flex-end;
+  position:relative;
+  bottom:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn-guusto{
+  margin-top:20px;
+}

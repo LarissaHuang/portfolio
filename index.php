@@ -15,187 +15,221 @@
 
     <?php include('header.php'); ?>
 
-    <!-- Full Banner -->
-    <div class="banner-full">
-
-        <h2 class="tagline lead">Hi, I'm Larissa.</h2>
 
 
-        <div class="desk" style="">
+    <?php  ?>
+    <!-- Intro -->
+    <div class="contain">
+        <div class="row row-2">
+            <div class=" col-sm-6 wrap-logo" style="display:flex; flex-direction:column; justify-content:space-between;">
 
+                <h1 style="display:block; font-size:105px; opacity:0.2">Larissa Huang</h1>
+
+
+
+                <p class="intro">"a front end developer and interactive designer who is passionate about bridging the gap between development and design."</p>
+            </div>
+
+
+            <div class="col-sm-6 wrap">
+
+                <div class='media'>
+
+                    <img class="intro-photo" style="padding:30px" src="../img/Larissa-Huang-photo.jpg">
+                </div>
+
+            </div>
         </div>
 
-
-        <div class="banner-left">
-            <img class="developer responsive" src="img/developer.png">
-        </div>
-
-        <div class="banner-right">
-            <img class="designer responsive" src="img/designer.png">
-        </div>
     </div>
+
+
+
     <?php  ?>
 
-    <div class="container-fluid">
+    <!-- Guusto -->
+    <a href="guusto.php">
+        <div class="contain">
+            <div class="row row-2 grow">
+                <div class=" col-sm-6 wrap-logo">
 
-        <?php  ?>
-        <div class="row">
+                    <div class="logo">
 
-            <!-- Guusto -->
-            <div class="col-lg-6 nopadding">
+                        <img class="logo--guusto" src="../img/guusto-logo-black.png" />
 
-                <div class="col-lg-6">
-                    <img class="home" src="../img/guusto-banner.png" />
+                        <h3 class="title">Front End Development</h3>
+                        <div class="keygroup">
+                            <p class="key guusto">Bootstrap</p>
+                            <p class="key guusto">CSS</p>
+                            <p class="key guusto">AngularJS</p>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="col-lg-6">
-                    text
+
+
+                <div class="col-sm-6 wrap">
+                    <div class="media">
+                        <img src="../img/guusto-card-pf.jpg" />
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </a>
+
+    <!-- To Do-->
+    <a href="todolist.php">
+        <div class="contain">
+            <div class="row row-2 grow">
+                <div class="col" style="display:block;">
+
+                    <img class="logo--todo" src="../img/todo-inner.png">
+
+                    <h3 class="title">A simple React app</h3>
+                    <div class="keygroup">
+                        <p class="key">Data binding
+                            <p class="key">Components</p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 wrap">
+                    <div class="media" style="flex-direction:column;">
+
+                        <img class="home" src="../img/todo-banner.png" />
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
+    </a>
 
-        <div class="row">
+
+    <!-- infinite yoga -->
+    <a href="/infinite-yoga.php">
+        <div class="contain">
+
+            <div class="row row-2 grow">
+                <div class="col-sm-6 wrap-logo">
+
+                    <div class="logo">
+
+                        <img class="logo--yoga" src="../img/infinite-yoga-logo.jpg" />
+
+                        <h3 class="title">UI Design</h3>
+                        <div class="keygroup">
+                            <p class="key">Adobe XD
+                                <p class="key">Adobe Illustrator</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 wrap nopadding">
+                    <div class="media">
+
+                        <img class="yoga" src="../img/infinite-yoga-card.jpg" />
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </a>
+
+    <!-- Shutter-->
+    <a href="/shutter-thunder.php">
+        <div class="contain">
+            <div class="row row-2 grow">
+                <div class=" col-sm-6 wrap-logo">
+
+                    <div class="logo">
+                        <img class="logo--shutter" src="../img/shutter-thunder-logo-transp.png">
 
 
-            <!-- React To Do List -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt-todo ]  js-tilt data-tilt-scale=" 1.1" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <div class="c-example__tilt-inner-todo">
+                        <h3 class="title">WordPress Development</h3>
+                        <div class="keygroup">
+                            <p class="key">PHP</p>
+                            <p class="key">Custom Theme</p>
+                            <p class="key">Custom Plugins</p>
 
                         </div>
-                        <span id="todo-desc">
-                            <p class="custom">React.JS</p> <a href="todolist.php" class="btn btn-secondary"> View</a>
-                        </span>
                     </div>
+
+                </div>
+
+
+                <div class="col-sm-6 wrap">
+                    <div class="media">
+                        <video class="responsive" controls mute autoplay loop>
+                            <source src="video/cinematography-transparent.mp4" type="video/mp4" class="responsive">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+
                 </div>
             </div>
 
+        </div>
+    </a>
 
-            <!--Hometown Pets -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt-pets js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <span id="pets-desc">
-                            <p class="custom">React.js</p>
-                            <a href="hometown-pets.php" class="btn btn-pets"> View</a>
-                        </span>
 
-                        <div class="c-example__tilt-inner-pets">
-                            <div></div>
+    <!-- Tag-->
+    <a href="tag-heuer-interactive.php">
+        <div class="contain">
+
+            <div class="row row-2 grow">
+                <div class=" col-sm-6 wrap-logo">
+
+                    <div class="logo" style="margin-top:-10px;">
+
+                        <img class="logo--tag" src="../img/tag-logo.jpg" />
+
+                        <h3 class="title">Interactive Illustration</h3>
+                        <div class="keygroup">
+                            <p class="key">Adobe Illustrator</p>
+                            <p class="key">JQuery</p>
+
+
                         </div>
 
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-6 wrap">
+                    <div class="media" style="">
+                        <img src="../img/tag-card-pf.jpg" />
 
                     </div>
+
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <!-- shutter thunder -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt ] js-tilt data-tilt-scale=" 1.1"" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <div class="c-example__tilt-inner">
-                        </div>
-                        <span id="shutter-desc">
-                            <p class="custom">Web Development</p> <a href="shutter-thunder.php" class="btn btn-outline-secondary">View</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
+    </a>
 
 
-            <!-- green pearl -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt2 ] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <div class="c-example__tilt-inner2">
-                        </div>
-                        <span id="green-desc">
-                            <p class="custom">Web Development</p> <a href="green-pearl.php" class="btn btn-outline-secondary"> View</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
 
 
-            <!-- infinite yoga -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt3 ] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <span id="infinite-desc">
-                            <p class="custom">UI Concept</p>
-                            <a href="infinite-yoga.php" class="btn btn-outline-secondary"> View</a>
-                        </span>
 
-                        <div class="c-example__tilt-inner3-1">
-                            <div class="square bottom-square"></div>
-                        </div>
-
-                        <div class="c-example__tilt-inner3-2">
-                            <div class="square middle-square"></div>
-                        </div>
-
-                        <div class="c-example__tilt-inner3-3">
-                            <div class="square top-square"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Row -->
-
-            <!-- NomNomSox -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt4 ] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <span id="nomnom-desc">
-                            <p class="custom">Content Strategy</p> <a href="nomnomsox.php" class="btn btn-outline-secondary"> View</a>
-                        </span>
-
-                        <div class="c-example__tilt-inner4">
-                            <!-- <img class="nomnomsox-logo" src="img/nomnomsox-logomark.svg"> -->
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tag Heuer   -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt5 ] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-
-                        <span id="tag-desc">
-                            <p class="custom">Interactive Illustration</p> <a href="tag-heuer-interactive.php" class="btn btn-outline-secondary"> View</a>
-                        </span>
+    </section>
 
 
-                        <div class="c-example__tilt-inner5">
 
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Hive -->
-            <div class="col-lg-4 col-md-6 nopadding">
-                <div class="card">
-                    <div class="[ c-example__tilt6 ] js-tilt" data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <span id="hive-desc">
-                            <p class="custom">Web Design</p> <a href="hive.php" class="btn btn-outline-secondary"> View</a>
-                        </span>
-                        <div class="c-example__tilt-inner6">
+    <?php  ?>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><?php  ?>
-
-    </div><?php  ?>
+    <?php  ?>
 
     <?php include('connect-with-me.php'); ?>
     <?php include('footer.php'); ?>
